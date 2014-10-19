@@ -1,0 +1,18 @@
+* {
+	font-family: Garamond
+}
+
+h2 {
+	color: red;
+	text-align: center;
+}
+
+h4 {
+	color: black;
+	margin-left: 20px
+}
+
+p {
+	color: blue;
+	margin-left: 30px
+}
