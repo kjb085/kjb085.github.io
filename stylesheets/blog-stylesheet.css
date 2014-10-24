@@ -16,3 +16,20 @@ p {
 	color: blue;
 	margin-left: 30px
 }
+
+body {
+	background-color: gray
+}
+
+#header {
+	color: green;
+	margin: auto;
+	height: 60px;
+	width: 1400px;
+}
+
+#side-bar {
+	color: green;
+	height
+}
+
