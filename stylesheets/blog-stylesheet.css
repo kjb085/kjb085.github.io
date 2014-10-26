@@ -1,35 +1,67 @@
 * {
-	font-family: Garamond
+	font-style: Times;
+	background-color: #001399;
+}
+
+h1 { 
+	color: #C27613;
 }
 
 h2 {
-	color: red;
+	color: black;
 	text-align: center;
+	background-color: #A67D29;
 }
 
 h4 {
 	color: black;
-	margin-left: 20px
+	margin-left: 20px;
+	background-color: #A67D29;
 }
 
 p {
-	color: blue;
 	margin-left: 30px
 }
 
-body {
-	background-color: gray
+a {
+	color: #001399;
+	background-color: gray;
+}
+
+a:hover {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #header {
-	color: green;
-	margin: auto;
-	height: 60px;
-	width: 1400px;
+	font-family: Garamond
 }
 
 #side-bar {
-	color: green;
-	height
+	position: fixed;
+	float: left;
+	float: top;
+	height: auto;
+	width: 70px;
+	border: 1px;
+	border-radius: 8px;
+	display: block;
+	background-color: gray;
+	padding: 5px;
+	text-align: center
 }
 
+#post {
+	height: auto;
+	border: 1px;
+	border-radius: 4px;
+	margin-left: 85px;
+	/*margin-right: 10px;*/
+	padding: 10px;
+	padding-right: 5px;
+	background-color: #A67D29;
+}
+
+p {
+	background-color: #A67D29;
+}
