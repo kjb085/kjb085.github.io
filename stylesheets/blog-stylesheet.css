@@ -1,5 +1,5 @@
 * {
-	font-style: Times;
+	font-family: Times;
 	background-color: #001399;
 }
 
@@ -60,6 +60,11 @@ a:hover {
 	padding: 10px;
 	padding-right: 5px;
 	background-color: #A67D29;
+}
+
+.code {
+	font-family: Courier;
+	background-color: gray;
 }
 
 p {
