@@ -1,45 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheets/index_stylesheet.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="stylesheets/index_stylesheet.css" media="screen">
 		<title>Kenn's Page</title>
 	</head>
 	<body>
-		<div id="header">
-			<h1>Creative Website Title</h1>
+		<header class="row">
+			<div class="span12">
+
+				<nav class="navbar">
+					<div class="navbar-inner">
+						<p class="brand">Kenn's Page</p>
+						<ul class="nav">
+							<li class="divider-vertical"></li>
+							<li><a href="http://kjb085.github.io/index.html">Home</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="http://kjb085.github.io/about_me.html">About Me</a></li>
+							<li class="divider-vertical"></li>
+
+							<li class "dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+
+								<ul class="dropdown-menu">
+									<li><a href="http://kjb085.github.io/technical_blog.html">Technical</a></li>
+									<li class="divider"></li>
+									<li><a href="http://kjb085.github.io/cultural_blog.html">Cultural</a></li>
+								</ul>
+
+							</li>
+							<li class="divider-vertical"></li>
+							<li><a href="http://kjb085.github.io/projects.html">Projects</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="http://kjb085.github.io/stringing.html">Racquet Stringing</a></li>
+							<li class="divider-vertical"></li>
+							<li><a href="http://kjb085.github.io/goals.html">Goals</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome!</h1>
+				<img src="Pictures/my_picture.jpg" id="intro-img">
+				<p>This is where there will be a brief introduction to the site</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas nisi nec nulla euismod sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis suscipit turpis ullamcorper odio lacinia interdum. Aliquam congue libero a lectus congue vulputate. Proin interdum rhoncus diam id suscipit. Donec elementum convallis eros, sed pulvinar turpis lacinia ac. Vestibulum consequat commodo nulla nec pulvinar. Maecenas malesuada molestie dolor, vitae porta diam dictum quis. Morbi magna neque, semper non dapibus non, sagittis vitae felis. Nunc hendrerit est et pulvinar tristique. Maecenas laoreet, ex eget semper scelerisque, dui dolor tempus neque, et maximus libero nulla sed augue. Nam eu lorem feugiat, pretium arcu sit amet, ornare nunc.</p>
+			</div>
 		</div>
-		<div id="body">
-			<div onclick="location.href='http://kjb085.github.io/index.html'">
-				<p>Home</p>
-			</div>
-			<div onclick="location.href='http://kjb085.github.io/about_me.html'">
-				<p>About Me</p>
-			</div>
-			<div onclick="location.href='http://kjb085.github.io/technical_blog.html'">
-				<p>Blog</p>
-			</div>
-			<div onclick="location.href='http://kjb085.github.io/projects.html'">
-				<p>Projects</p>
-			</div>
-			<div onclick="location.href='http://kjb085.github.io/stringing,html'">
-				<p>Racquet Stringing</p>
-			</div>
-			<div onclick="location.href='http://kjb085.github.io/goals.html'">
-				<p>Goals</p>
+
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4">
+				<h2>Heading</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          	</div>
+          	<div class="col-md-4">
+				<h2>Heading</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          	</div>
+          	<div class="col-md-4">
+				<h2>Heading</h2>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          	</div>
+          	</div>
+		</div>
+
+		<div class="pagination">
+			<div class="container">
+				<h3>Contact Information</h3>
+				<b>
+					<ul>
+						<li><a href="mailto:kjb085@gmail.com"><img src="Pictures/mail_icon.png" class="contact-img"> Email</a></li>
+						<li><a href="http://www.twitter.com/tweetsbykenn" class="contact-img"><img src="Pictures/twitter_logo.png" class="contact-img"> Twitter</a></li>
+						<li><a href="http://www.linkedin.com/in/kennethbreece"><img src="Pictures/linkedin_logo.png" class="contact-img"> LinkedIn</a></li>
+						<li><a href="https://www.facebook.com/kbreece"><img src="Pictures/facebook_logo.png" class="contact-img"> Facebook</a></li>
+					</ul>
+				</b>
 			</div>
 		</div>
-		<div id="intro">
-			<img src=Pictures/my_picture.jpg>
-			<h2>Kenn Breece</h2>
-			<p>Brief introduction of who I am/purpose of the website</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas nisi nec nulla euismod sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis suscipit turpis ullamcorper odio lacinia interdum. Aliquam congue libero a lectus congue vulputate. Proin interdum rhoncus diam id suscipit. Donec elementum convallis eros, sed pulvinar turpis lacinia ac. Vestibulum consequat commodo nulla nec pulvinar. Maecenas malesuada molestie dolor, vitae porta diam dictum quis. Morbi magna neque, semper non dapibus non, sagittis vitae felis. Nunc hendrerit est et pulvinar tristique. Maecenas laoreet, ex eget semper scelerisque, dui dolor tempus neque, et maximus libero nulla sed augue. Nam eu lorem feugiat, pretium arcu sit amet, ornare nunc.</p>
-		</div>
-		<div id="contact">
-			<h2>Contact Information</h2>
-			<a href=mailto:kjb085@gmail.com><img src=Pictures/mail_icon.png> Email</a>
-			<a href=http://www.twitter.com/tweetsbykenn><img src=Pictures/twitter_logo.png> Twitter</a>
-			<a href=http://www.linkedin.com/in/kennethbreece><img src=Pictures/linkedin_logo.png> LinkedIn</a>
-			<a href=https://www.facebook.com/kbreece><img src=Pictures/facebook_logo.png> Facebook</a>
-		</div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="bootstrap.js"></script>
 	</body>
 </html>
