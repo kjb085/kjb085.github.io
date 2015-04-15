@@ -1,17 +1,16 @@
-function showRecaptcha(element) {
-  Recaptcha.create('6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I', element, {
-    theme: 'custom', // maybe pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
+// function showRecaptcha(element) {
+//   Recaptcha.create('6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I', element, {
+//     theme: 'custom', // maybe pick another at https://developers.google.com/recaptcha/docs/customization
+//     custom_theme_widget: 'recaptcha_widget'
+//   });
+// }
 
-function setupRecaptcha() {
+// function setupRecaptcha() {
+
+$(document).ready(function(){ 
   var contactFormHost = 'kjb085-github-backend.herokuapp.com',
       form = $('#contact-form'),
       notice = form.find('#notice');
-
-  if (form.length) {
-    showRecaptcha('recaptcha_widget');
 
     form.on('submit', function(ev){
       ev.preventDefault();
@@ -45,5 +44,4 @@ function setupRecaptcha() {
         }
       });
     });
-  }
-}
+  })
