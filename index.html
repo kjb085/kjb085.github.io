@@ -1,140 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, inital-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen">
-		<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
-		<link type="text/css" rel="stylesheet" href="css/custom.css">
-		<title>Kenn Breece</title>
-	</head>
-	<body>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <nav class="">
-      <div class="container navbar navbar-fixed">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Kenn Breece</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">CmdV Ninja</a></li>
-                <li><a href="#">Riddle Me This</a></li>
-                <li><a href="#">Finished!</a></li>
-                <li><a href="#">Team Tracker</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container-fluid -->
-    </nav>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Kenn Breece</title>
+	<meta name="author" content="Kenn Breece" />
+	<meta name="Resource-type" content="Document" />
 
-    <div class="fullpage">
-			<div class="section jumbotron vertical-center">
-				<div class="container-fluid text-center welcome">
-					<h1>Welcome</h1>
-					<h2 class='btn'>Check It Out</h2>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom2.css" />
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu|Volkhov|Audiowide' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+
+	<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script type="text/javascript" src="js/recaptcha.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				navigationTooltips: ['Intro', 'Portfolio', 'About', 'Contact'],
+				navigation: true,
+				slidesNavigation: true,
+				css3: false,
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="fullpage">
+
+		<div class="section active" id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Hi! My name is Kenn Breece</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="section-subheading text-muted">Welcome to my website</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="section-subheading text-muted">Keep scrolling to check out some of my projects, read a little bit about me, and discover ways to get in contact with me</h2>
+					</div>
 				</div>
 			</div>
+		</div>
 
-				<div class="section" id="projects">		
-					<div class="container">
-		      <!-- Example row of columns -->
-			      <div class="row text-center">
-			      	<div class="col-md-4">
-			       		<h2><a href="#">Finished!</a></h2>
-			          <img class="project_img" src="pictures/favicon.ico">
-			          <p>An upcoming web based to-do list application which allows users to manage tasks on a post-it note like board, share their board with others, add others as contributors, and get notifications tasks that have an upcoming due date.</p>
-			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2 class="text-center"><a href="#">Yahoo Team Tracker</a></h2>
-			          <img class="project_img" src="pictures/favicon.ico">
-			          <p class="text-center">An upcoming, easy to use web application that allows user's of Yahoo's fantasy hockey to easily import and share their teams as well as vote and comment on other user's teams.</p><br />
-			          <p class="text-center"><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-			        </div>
-			        <div class="col-md-4">
-			          <h2 class="text-center"><a href="http://cmdvninja.herokuapp.com">CmdV Ninja</a></h2>
-			          <img class="project_img" src="pictures/favicon.ico">
-			         	<p class="text-center">A web application paired a chrome extension and a sublime text plugin geared to allowing developers to store, curate, and easily access snippets of code in order expedite the development process.</p><br />
-			          <p class="text-center"><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-			        </div>
-			      </div>
-			      <div class="row text-center">
-			        <div class="col-md-4">
-			          <h2><a href="http://riddlemethis.herokuapp.com">Riddle Me This</a></h2>
-			          <img class="project_img" src="pictures/favicon.ico">
-			          <p>A place for sharing, commenting, and voting on answered riddles. Additionally, users can work together in order to determine the answers of unanswered riddles that other users submitted.</p><br />
-			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-			       </div>
-			       <div class="col-md-4">
-			       		<h2><a href="#">Don't Panic</a></h2>
-			          <img class="project_img" src="pictures/favicon.ico">
-			          <p>A Chrome Extension geared toward students of Dev Bootcamp to easily access and inform instructors of the challenge that they are having so that the students can receive quick help from the best one to help tackle their developing challenge.</p>
-			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-			        </div>
-			      </div>
-			    </div>
-				</div class="section">
-
-				<div class="section" id="about">
-					<div class="container-fluid">
-						<div class="page-header text-center">
-							<h2>About Me</h2>
-							<p>Web Developer, Sports Fanatic, Finance Enthusiast, Critical Thinker, and most importantly Big Brother to Three Amazing Kids</p>
-						</div>
-						<div class="row pictures">
-							<div class="col-md-4">
-								<img class="img-thumbnail img-rounded" src="pictures/standard.jpg">
-							</div>
-							<div class="col-md-4">
-								<img class="img-thumbnail img-rounded" src="pictures/standard.jpg">
-							</div>
-						</div>
-						<div class="description">
-							<p>Include a brief paragraph about myself here</p>
+		<div class="section" id="portfolio">
+			<div class="slide" id="cmdvninja">
+				<h1>CmdV Ninja</h1>
+				<img src="pictures/favicon.ico" class="portfolio_img">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>A web application combined with a chrome extension and a sublime text plugin which allows developers to store, curate, and easily access snippets of code in order expedite the development process.</h3><br/>
+							<!-- Save what's below for the details page -->
+							<!-- Users can easily grab code snippets at any time while browsing the web and both access and save snippets directly from their text editors as well as view, curate, and share their groups of snippets with a seamless web interface. -->
+							<a class="btn btn-default porfolio-btn" href="#" role="button" data-toggle="modal" data-target="#portfolioModal1">See more &raquo;</a>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="section" id="contact">
-					<div class="container-fluid">
-						<div class="page-header text-center">
-							<h2>Contact Information</h2>
+			<div class="slide" id="riddlemethis">
+				<h1>Riddle Me This</h1>
+				<img src="pictures/lightbulb.png" class="portfolio_img">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>A place for sharing, commenting, and voting on answered riddles. Additionally, users can work together in order to determine the answers of unanswered riddles that other users submitted.</h3><br/>
+							<a class="btn btn-default porfolio-btn" href="#" role="button" data-toggle="modal" data-target="#portfolioModal2">See more &raquo;</a>
 						</div>
-						<ul>
-							<!-- Have these as images -->
-							<li><a href="mailto:kjb085@gmail.com">Email</a></li>
-							<li><a href="http://www.linkedin.com/in/kennbreece" target="_blank">LinkedIn</a></li>
-							<li><a href="https://github.com/kjb085" target="_blank">GitHub</a></li>
-						</ul>
 					</div>
-				</div class="section">
+				</div>
+			</div>
 
-		<footer>	
-			<div class="text-left">
-				<p>Copyright c Kenn Breece 2015</p> 
-				<!-- Change c to copyright symbol -->
+			<div class="slide" id="dont_panic">
+				<h1>Don't Panic</h1>
+				<img src="pictures/dont_panic.png" class="portfolio_img">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>A Chrome Extension made for students of Dev Bootcamp to easily inform instructors of a challenge that they are having so students can receive timely help from the best instructor available for their coding problem.</h3><br/>
+							<a class="btn btn-default porfolio-btn" href="#" role="button">See more &raquo;</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="text-right">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Use</a>
+
+			<div class="slide" id="finished">
+				<h1>Finished!</h1>
+				<img src="pictures/lightbulb.png" class="portfolio_img">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>An upcoming web based to-do list application which allows users to manage tasks on a post-it note like board and collaborate on project boards with other users.</h3><br/>
+							<!-- share their board with others, add others as contributors, and get notifications tasks that have an upcoming due date. -->
+							<a class="btn btn-default porfolio-btn" href="#" role="button">See more &raquo;</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</footer>
+
+			<div class="slide" id="team_tracker">
+				<h1>Yahoo Team Tracker</h1>
+				<img src="pictures/lightbulb.png" class="portfolio_img">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>An upcoming, easy to use web application that allows user's of Yahoo's fantasy hockey to easily import and share their teams as well as vote and comment on other user's teams.</h3><br/>
+							<a class="btn btn-default porfolio-btn" href="#" role="button">See more &raquo;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section" id="about">
+			<h1>About Me</h1>
+			<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="section-subheading">Web Developer, Sports Fanatic, Story Lover, Entreprenuerial Enthusiast, Critical Thinker, and most importantly Big Brother to Three Amazing Kids</h3>
+							<hr width="1000">
+						</div>
+					</div>
+					<div class="pictures row">
+						<div class="col-xs-4">
+							<img class="img-thumbnail" src="pictures/standard.jpg">
+						</div>
+						<div class="col-xs-4">
+							<img class="img-thumbnail wide" src="pictures/me_and_pk.jpg">
+						</div>
+						<div class="col-xs-4">
+							<img class="img-thumbnail" src="pictures/artsy.jpg">
+						</div>
+					</div>
+					<div class="paragraph row">
+						<div class="col-xs-8 col-xs-offset-2 text-center">
+							<h4>Web developing professional with a passion for all things tech and seeks to  building beautiful and meaningful things in order to create a better tomorrow. Recent grad of Dev Bootcamp, an immeserive 19 week program on web development.<br />Personally, I'm well versed in Ruby, Rails, JavaScript & jQuery, PostgreSQL, and HTML/CSS. Additionally, I have some experience with MongoDB, Express, AngularJS, Node.js, and Python. My goal is to at some point expand to mobile development as well.</h4>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="section" id="contact">
+			<div class="container" id="contact-page-content">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1 class="section-heading">Contact</h1>
+						<h2 class="section-subheading text-muted">Questions? Comments? Concerns?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<form name="sentMessage" id="contact-form" method="post" data-success="Message successfully sent!" validate>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="name" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="Your Phone" id="phone" data-validation-required-message="Please enter your phone number.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" placeholder="Your Message *" id="message" form="contactForm" required data-validation-required-message="Please enter a message."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-xs-12 text-center">
+									<div id="success"></div>
+									<div class="g-recaptcha" data-sitekey="6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I"></div>
+									<input type="submit" value="Send Message" class="btn btn-xl">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="spacer"></div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1 class="section-heading">Or Connect</h1>
+					</div>
+				</div>
+				<div class="row connect">
+					<div class="col-xs-4">
+						<a target="_blank" href="http://www.linkedin.com/in/kennbreece"><i class="fa fa-linkedin-square fa-4x"></i></a>
+					</div>
+					<div class="col-xs-4">
+						<a target="_blank" href="http://www.github.com/kjb085"><i class="fa fa-github-square fa-4x"></i></a>
+					</div>
+					<div class="col-xs-4">
+						<a target="_blank" href="https://plus.google.com/106334665090229924500/posts"><i class="fa fa-google-plus-square fa-4x"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="copyright">Copyright &copy; Kenn Breece 2015</span>
+						</div>
+						<div class="col-md-4">
+						</div>
+						<div class="col-md-4">
+							<ul class="list-inline quicklinks">
+								<li><a href="#">Privacy Policy</a>
+								</li>
+								<li><a href="#">Terms of Use</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	</body>
+<!-- ######################################## Portfolio Modals #################################################### -->
+	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-title">
+							<h2>CmdV Ninja</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 carousel-container">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="3"></li>
+								<li data-target="#myCarousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="pictures/cmdv_ninja/log_in.png" alt="First slide">
+				        </div>
+				        <div class="item">
+				        	<img class="second-slide" src="pictures/cmdv_ninja/main_page.png" alt="Second slide">
+				        </div>
+				        <div class="item">
+				        	<img class="third-slide" src="pictures/cmdv_ninja/create_new_group.png" alt="Third slide">
+				        </div>
+				        <div class="item">
+				        	<img class="fourth-slide" src="pictures/cmdv_ninja/ace_editor_1.png" alt="Fourth slide">
+				        </div>
+				        <div class="item">
+				        	<img class="fifth-slide" src="pictures/cmdv_ninja/ace_editor_2.png" alt="Fifth slide">
+				        </div>
+				      </div>
+				      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				      	<span class="sr-only">Previous</span>
+				      </a>
+				      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				      	<span class="sr-only">Next</span>
+				      </a>
+				    </div>
+				  </div>
+				</div>
+
+	    	<div class="row modal-body">
+					<div class="col-xs-6">
+						<h3>Features</h3>
+						<ul class="text-left">
+							<li>Access and save snippets of code directly from the sublime text editor</li>
+							<li>Quickly save snippets you find while browsing the web with the chrome extension</li>
+							<li>Update and organize snippets from the web app</li>
+							<li>Share your groups of snippets with other users</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6">
+						<h3>Technology</h3>
+						<p>MongoDB | Express | AngularJS | Node.js | Bootstrap | Chrome Extension API | Sublime Text Plugin API</p>
+						<ul class="item-details no-bullets">
+								GitHub:
+								<strong><a href="https://github.com/garygz/commandve">Web App</a> | <a href="https://github.com/kjb085/cmdvninja-chrome-ext">Chrome Extension</a> | <a href="https://github.com/kjb085/cmdvninja-sublime">Sublime Text PlugIn</a></strong>
+							</li>
+							<li>Date:
+								<strong>March 2015</strong>
+							</li>
+							<li>Website:
+								<strong>www.cmdvninja.com</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<a class="btn btn-default project-btn" target="_blank" href="http://cmdvninja.herokuapp.com/">Check It Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-title">
+							<h2>Riddle Me This</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 carousel-container">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide" src="pictures/riddle_me_this/intro.png" alt="First slide">
+				        </div>
+				        <div class="item">
+				        	<img class="second-slide" src="pictures/riddle_me_this/intro_2.png" alt="Second slide">
+				        </div>
+				        <div class="item">
+				        	<img class="third-slide" src="pictures/riddle_me_this/riddle_show.png" alt="Third slide">
+				        </div>
+				      </div>
+				      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				      	<span class="sr-only">Previous</span>
+				      </a>
+				      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				      	<span class="sr-only">Next</span>
+				      </a>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row modal-body">
+					<div class="col-xs-6">
+						<h3>Features</h3>
+						<ul class="text-left">
+							<li>Post your favorite answered or unanswered riddle</li>
+							<li>Vote on the best riddles you come across</li>
+							<li>Discuss riddles via the comments or help solve unanswered riddles with other users</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 text-center">		
+						<h3>Technology</h3>
+						<p>Ruby | Rails | HTML | CSS3</p>
+						<ul class="item-details no-bullets">
+							<li>GitHub:
+								<strong><a href="https://github.com/sagararathi/riddle_me_this">Source</a></strong>
+							</li>
+							<li>Date:
+								<strong>February 2015</strong>
+							</li>
+							<li>Website:
+								<strong>riddlemethis.herokuapp.com</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<a class="btn btn-default project-btn" target="_blank" href="http://riddlemethis.herokuapp.com/">Check It Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Don't Panic</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/song-explorer.png" class="img-responsive img-centered" alt="image-alt">
+							<h3>Features:</h3>
+							<ul class="no-bullets">
+								<li>Post your favorite answered or unanswered riddle</li>
+								<li>Vote on the best riddles you come across</li>
+								<li>Discuss riddles via the comments or help solve unanswered riddles with other users</li>
+							</ul>
+							<h3>Technology:</h3>
+							<p>Ruby | Rails | HTML | CSS3</p>
+							<ul class="item-details no-bullets">
+								<li>GitHub:
+									<strong><a href="https://github.com/sagararathi/riddle_me_this">Source</a></strong>
+								</li>
+								<li>Date:
+									<strong>February 2015</strong>
+								</li>
+								<li>Website:
+									<strong>riddlemethis.herokuapp.com</strong>
+								</li>
+							</ul>
+							<a class="btn btn-default" target="_blank" href="http://riddlemethis.herokuapp.com/">Check It Out</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
 </html>
