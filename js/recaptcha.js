@@ -13,7 +13,7 @@ function setupRecaptcha() {
   if (form.length) {
     showRecaptcha('recaptcha_widget');
 
-    form.submit(function(ev){
+    form.on('submit', function(ev){
       ev.preventDefault();
 
       console.log("It's working!")
