@@ -1,0 +1,334 @@
+#menu li {
+  display:inline-block;
+  margin: 10px;
+  color: #000;
+  background:#fff;
+  background: rgba(255,255,255, 0.5);
+  -webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+  background:#666;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+}
+#menu li a{
+  text-decoration:none;
+  color: #000;
+}
+#menu li.active a:hover{
+  color: #000;
+}
+#menu li:hover{
+  background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+  padding: 9px 18px;
+  display:block;
+}
+#menu li.active a{
+  color: #fff;
+}
+#menu{
+  position:fixed;
+  top:0;
+  left:0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+
+body{
+  font-family: 'Volkhov', sans-serif;
+}
+
+  #intro h1 {
+    font-family: 'Audiowide', helvetica;
+    text-shadow: 5px 5px #000000
+  }
+
+  #intro h2 {
+    font-family: 'Audiowide', helvetica;
+    text-shadow: 2px 2px #000000;
+  }
+
+  h1{
+    font-size: 5em;
+    font-family: 'Ubuntu',helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+    text-shadow: 3px 3px #000000;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px #000000;
+    /*font-family: 'Vintage';*/
+  }
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+  .section{
+    text-align: center;
+  }
+
+
+  /* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #intro {
+    background-image: url(../pictures/processor_wallpaper.jpg);
+  }
+
+  #intro,
+  #porfolio,
+  #about,
+  #contact{
+    margin: 0px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #intro{
+    /*background-image: url(imgs/bg1.jpg);*/
+    padding: 3% 0 0 0;
+  }
+  #portfolio{
+    /*background-image: url(imgs/bg3.jpg);*/
+    padding: 0% 0 0 0;
+    background-color: #1bbc9b;
+  }
+  #about{
+    /*background-image: url(imgs/bg4.jpg);*/
+    padding: 0% 0 0 0;
+    background-color: #7BAABE;
+  }
+  #about h3{
+    text-shadow: 1px 1px #fff
+  }
+  #contact {
+    padding: 3% 0 0 0;
+    background-color: #DE564B;
+  }
+  #contact h2 {
+    text-shadow: 0px 0px #000000
+  }
+
+
+  /*Adding background for the slides
+  * --------------------------------------- */
+  /*#slide1{
+    background-image: url(imgs/bg2.jpg);
+    padding: 6% 0 0 0;
+  }
+  #slide2{
+    background-image: url(imgs/bg5.jpg);
+    padding: 6% 0 0 0;
+  }*/
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu li a {
+    color: #fff;
+  }
+
+/**********************************************/
+
+.title {
+  margin-bottom: -1em;
+}
+
+.img-thumbnail {
+  width: 14em;
+  height: 19em;
+}
+
+.wide {
+  width: 19em;
+  height: 19em;
+}
+
+#message {
+  height: 131px;
+}
+
+.slide {
+
+}
+
+#contact-page-content {
+  margin-top: 0%;
+}
+
+.spacer {
+  margin: 4em;
+}
+
+.navbar {
+  margin: -1em;
+}
+
+html, body {
+  height: 100%;
+}
+
+@font-face {
+	font-family: 'Vintage';
+	src: url('vintage.ttf');
+}
+
+.portfolio_img {
+  width: 300px ;
+  height: 300px ;
+}
+
+.connect a {
+  color: black;
+}
+
+.connect a:hover {
+  color: #7BAABE;
+}
+
+/***********************/
+
+.item-details {
+  margin-top: -1.75em;
+}
+
+#myCarousel {
+  margin-bottom: -1.8em;
+  margin-top: 1em;
+}
+
+.carousel-container {
+  height: 95%;
+  overflow: hidden;
+}
+
+.carousel-indicators li {
+  background-color: transparent;
+  border: 2px solid #556270;
+}
+
+.carousel-indicators li.active {
+  background-color: #556270;
+}
+
+.project-btn {
+  margin-top: -2em;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    /*border-color: #d3d3d3;*/
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #777;
+}
+
+.portfolio-modal .modal-content {
+    /*padding: 100px 0;*/
+    /*padding-top: 5em;*/
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #d3d3d3;
+}
+
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+  color: black;
+  text-shadow: 0px 0px #d3d3d3;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.footer {
+    padding-top: 4em;
+    text-align: center;
+}
+
+.footer .copyright {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 30px;
+}
+
+.footer .quicklinks {
+  margin-bottom: 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 30px;
+}
+
+.no-bullets {
+  list-style-type: none;
+}

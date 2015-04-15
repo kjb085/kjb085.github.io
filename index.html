@@ -3,90 +3,138 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, inital-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="stylesheets/index_stylesheet.css" media="screen">
-		<title>Kenn's Page</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen">
+		<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css">
+		<link type="text/css" rel="stylesheet" href="css/custom.css">
+		<title>Kenn Breece</title>
 	</head>
 	<body>
-		<header class="row">
-			<!-- <div class="span12">
 
-				<nav class="navbar">
-					<div class="navbar-inner">
-						<p class="brand">Kenn's Page</p>
-						<ul class="nav">
-							<li class="divider-vertical"></li>
-							<li><a href="http://kjb085.github.io/index.html">Home</a></li>
-							<li class="divider-vertical"></li>
-							<li><a href="http://kjb085.github.io/about_me.html">About Me</a></li>
-							<li class="divider-vertical"></li>
+    <nav class="">
+      <div class="container navbar navbar-fixed">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Kenn Breece</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CmdV Ninja</a></li>
+                <li><a href="#">Riddle Me This</a></li>
+                <li><a href="#">Finished!</a></li>
+                <li><a href="#">Team Tracker</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
 
-							<li class "dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+    <div class="fullpage">
+			<div class="section jumbotron vertical-center">
+				<div class="container-fluid text-center welcome">
+					<h1>Welcome</h1>
+					<h2 class='btn'>Check It Out</h2>
+				</div>
+			</div>
 
-								<ul class="dropdown-menu">
-									<li><a href="http://kjb085.github.io/technical_blog.html">Technical</a></li>
-									<li class="divider"></li>
-									<li><a href="http://kjb085.github.io/cultural_blog.html">Cultural</a></li>
-								</ul>
+				<div class="section" id="projects">		
+					<div class="container">
+		      <!-- Example row of columns -->
+			      <div class="row text-center">
+			      	<div class="col-md-4">
+			       		<h2><a href="#">Finished!</a></h2>
+			          <img class="project_img" src="pictures/favicon.ico">
+			          <p>An upcoming web based to-do list application which allows users to manage tasks on a post-it note like board, share their board with others, add others as contributors, and get notifications tasks that have an upcoming due date.</p>
+			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+			        </div>
+			        <div class="col-md-4">
+			          <h2 class="text-center"><a href="#">Yahoo Team Tracker</a></h2>
+			          <img class="project_img" src="pictures/favicon.ico">
+			          <p class="text-center">An upcoming, easy to use web application that allows user's of Yahoo's fantasy hockey to easily import and share their teams as well as vote and comment on other user's teams.</p><br />
+			          <p class="text-center"><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+			        </div>
+			        <div class="col-md-4">
+			          <h2 class="text-center"><a href="http://cmdvninja.herokuapp.com">CmdV Ninja</a></h2>
+			          <img class="project_img" src="pictures/favicon.ico">
+			         	<p class="text-center">A web application paired a chrome extension and a sublime text plugin geared to allowing developers to store, curate, and easily access snippets of code in order expedite the development process.</p><br />
+			          <p class="text-center"><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+			        </div>
+			      </div>
+			      <div class="row text-center">
+			        <div class="col-md-4">
+			          <h2><a href="http://riddlemethis.herokuapp.com">Riddle Me This</a></h2>
+			          <img class="project_img" src="pictures/favicon.ico">
+			          <p>A place for sharing, commenting, and voting on answered riddles. Additionally, users can work together in order to determine the answers of unanswered riddles that other users submitted.</p><br />
+			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+			       </div>
+			       <div class="col-md-4">
+			       		<h2><a href="#">Don't Panic</a></h2>
+			          <img class="project_img" src="pictures/favicon.ico">
+			          <p>A Chrome Extension geared toward students of Dev Bootcamp to easily access and inform instructors of the challenge that they are having so that the students can receive quick help from the best one to help tackle their developing challenge.</p>
+			          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+			        </div>
+			      </div>
+			    </div>
+				</div class="section">
 
-							</li>
-							<li class="divider-vertical"></li>
-							<li><a href="http://kjb085.github.io/projects.html">Projects</a></li>
-							<li class="divider-vertical"></li>
-							<li><a href="http://kjb085.github.io/stringing.html">Racquet Stringing</a></li>
-							<li class="divider-vertical"></li>
-							<li><a href="http://kjb085.github.io/goals.html">Goals</a></li>
+				<div class="section" id="about">
+					<div class="container-fluid">
+						<div class="page-header text-center">
+							<h2>About Me</h2>
+							<p>Web Developer, Sports Fanatic, Finance Enthusiast, Critical Thinker, and most importantly Big Brother to Three Amazing Kids</p>
+						</div>
+						<div class="row pictures">
+							<div class="col-md-4">
+								<img class="img-thumbnail img-rounded" src="pictures/standard.jpg">
+							</div>
+							<div class="col-md-4">
+								<img class="img-thumbnail img-rounded" src="pictures/standard.jpg">
+							</div>
+						</div>
+						<div class="description">
+							<p>Include a brief paragraph about myself here</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="section" id="contact">
+					<div class="container-fluid">
+						<div class="page-header text-center">
+							<h2>Contact Information</h2>
+						</div>
+						<ul>
+							<!-- Have these as images -->
+							<li><a href="mailto:kjb085@gmail.com">Email</a></li>
+							<li><a href="http://www.linkedin.com/in/kennbreece" target="_blank">LinkedIn</a></li>
+							<li><a href="https://github.com/kjb085" target="_blank">GitHub</a></li>
 						</ul>
 					</div>
-				</nav>
-			</div>
-		</header>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Welcome!</h1>
-				<img src="Pictures/my_picture.jpg" id="intro-img">
-				<p>This is where there will be a brief introduction to the site</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas nisi nec nulla euismod sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis suscipit turpis ullamcorper odio lacinia interdum. Aliquam congue libero a lectus congue vulputate. Proin interdum rhoncus diam id suscipit. Donec elementum convallis eros, sed pulvinar turpis lacinia ac. Vestibulum consequat commodo nulla nec pulvinar. Maecenas malesuada molestie dolor, vitae porta diam dictum quis. Morbi magna neque, semper non dapibus non, sagittis vitae felis. Nunc hendrerit est et pulvinar tristique. Maecenas laoreet, ex eget semper scelerisque, dui dolor tempus neque, et maximus libero nulla sed augue. Nam eu lorem feugiat, pretium arcu sit amet, ornare nunc.</p>
-			</div>
-		</div>
+				</div class="section">
 
-		<div class="container">
-			<div class="row">
-			<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          	</div>
-          	<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          	</div>
-          	<div class="col-md-4">
-				<h2>Heading</h2>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          		<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          	</div>
-          	</div>
-		</div>
-
-		<div class="pagination">
-			<div class="container">
-				<h3>Contact Information</h3>
-				<b>
-					<ul>
-						<li><a href="mailto:kjb085@gmail.com"><img src="Pictures/mail_icon.png" class="contact-img"> Email</a></li>
-						<li><a href="http://www.twitter.com/tweetsbykenn" class="contact-img"><img src="Pictures/twitter_logo.png" class="contact-img"> Twitter</a></li>
-						<li><a href="http://www.linkedin.com/in/kennethbreece"><img src="Pictures/linkedin_logo.png" class="contact-img"> LinkedIn</a></li>
-						<li><a href="https://www.facebook.com/kbreece"><img src="Pictures/facebook_logo.png" class="contact-img"> Facebook</a></li>
-					</ul>
-				</b>
+		<footer>	
+			<div class="text-left">
+				<p>Copyright c Kenn Breece 2015</p> 
+				<!-- Change c to copyright symbol -->
 			</div>
-		</div> -->
-		<div class='maintenance'>
-			<img src='Pictures/under-maintenance.jpg'>
-		</div>
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="bootstrap.js"></script>
+			<div class="text-right">
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms of Use</a>
+			</div>
+		</footer>
+	</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	</body>
 </html>

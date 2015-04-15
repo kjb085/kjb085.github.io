@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Oriol Ris - creador d'idees</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			
+			var ori = $.fn.fullpage({
+				//slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['aboutme', 'works', 'contact'],
+				menu: '#menu',
+				controlArrowColor: '#000',
+				normalScrollElements: '.mfp-wrap',
+
+			});
+			
+
+			$.magnificPopup.instance.close = function () {
+		    	$.magnificPopup.proto.close.call(this);
+		    	$.fn.fullpage.addScrollEvent();
+		    };
+
+			// Declare parallax on layers
+			jQuery('.nuvol,.sol,.mountain1,.mountain2,.mountain3').parallax({
+				mouseport: jQuery(".container"),
+			});
+
+			$('.image-popup').magnificPopup({
+				type: 'image',
+				closeOnContentClick: true,
+				mainClass: 'mfp-img-mobile',
+				overflowY: 'auto',
+				cursor: 'mfp-zoom-out-cur',
+				image: {
+					verticalFit: false
+				},
+				
+			});
+
+			
+		});
+
+
+		/*$( window ).resize(function() {
+			//jQuery('.nuvol,.sol,.mountain1,.mountain2,.mountain3').parallax({
+			jQuery('.parallax-layer').unparallax(true);	
+			//	mouseport: jQuery(".container"),
+			//});
+		});*/
+
+	</script>
+
+
+</head>
+<body>
+
+
+<!-- HEAD -->
+<div id="menu" class="navbar-fixed">
+	<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                          
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li data-menuanchor="aboutme" class="active"><a href="#aboutme">Sobre mi</a></li>
+					<li data-menuanchor="works"><a href="#works">Portafoli</a></li>
+					<li data-menuanchor="contact"><a href="#contact">Contacte</a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+<!-- HEAD -->
+
+<div class="section" id="section0">
+
+	<!--<div class="row ">-->
+		<div class="container text-center">
+			
+			<div class="something-semantic">
+				<div class="something-else-semantic">
+					<h1 class="pagination-centered">Hola!
+					<span class="size56">Sóc l’Oriol Ris, </span>
+					<p class="size44 yellow">dissenyador & desenvolupador </p>
+					<span class="size122">web.</span>
+					</h1>	
+					<p class="white size24" style="color:#a2d7d8; font-weight:400">Photoshop + CSS & HTML Responsive + JQuery + PHP & MySql</p>
+					<p class="about white">
+						M'agrada la vida en familia, cuinar, la montanya i tots el animals (el mosquits no tenen del tot el meu apreci).
+						Visc a Cabrils, en plena Serralada Litoral, i em dedico al desenvolupament de webs des de fa uns 15 anys. 
+					</p>
+				</div>
+			</div>
+
+			<div class="nuvol"><img src="img/nuvol.png"></div>
+			<div class="sol"><img src="img/sol.png"></div>
+			<div class="mountain1"><img src="img/mountain1.png"></div>
+			<div class="mountain2"><img src="img/mountain2.png"></div>
+			<div class="mountain3"><img src="img/mountain3.png"></div>
+
+		</div>    
+    <!--</div>-->
+</div>
+
+<div class="section" id="section1">
+    <div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/nthephoto_full.jpg" title="" wrc_done="true"><img src="img/nthephoto.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Nthephoto</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Responsive + JQuery</h3>
+	            	<a href="http://www.nthephoto.com" class="btn btn-default btn-lg size24" target="_blank">Finalitzan</a>
+	            </div>
+	        </div>
+        </div>    
+	</div>
+
+	<div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/brainworksglobalservices_full.jpg" title="" wrc_done="true"><img src="img/brainworksglobalservices.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Brainworks Global Services</h2>
+	                <h3>Disseny + CSS3 & HTML5 + JQuery</h3>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+
+    <div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/legrand_full.jpg" title="" wrc_done="true"><img src="img/legrand.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Conectayganaconlegrand</h2>
+	                <h3>Disseny + CSS3 & HTML5</h3>
+	            </div>
+	        </div>
+        </div>    
+	</div>
+    
+    <div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/marketplease_full.jpg" title="" wrc_done="true"><img src="img/marketplease.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Marketplease</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Php & MySql</h3>
+	            	<a href="http://www.marketplease.com" class="btn btn-default btn-lg size24" target="_blank">Veure on-line</a>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+
+	<div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/scoolday_full.jpg" title="" wrc_done="true"><img src="img/scoolday.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Scoolday</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Php & MySql + JQuery</h3>
+	            	<a href="http://www.scoolday.com" class="btn btn-default btn-lg size24" target="_blank">Veure on-line</a>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+
+	<div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/oksymantec_full.jpg" title="" wrc_done="true"><img src="img/oksymantec.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>OkSymantec</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Php & MySql</h3>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+
+	<div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/univadis_full.jpg" title="" wrc_done="true"><img src="img/univadis.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>Univadis</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Php & MySql</h3>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+
+	<div class="slide">
+		<div class="row">
+    		<div class="container">
+	            <div class="col-md-12">
+	            	<a class="image-popup" href="img/sustiendas_full.jpg" title="" wrc_done="true"><img src="img/sustiendas.jpg" width="100%"></a>
+	            	<br/>
+	            	<h2>SusTiendas</h2>
+	                <h3>Disseny + CSS3 & HTML5 + Php & MySql</h3>
+	                <a href="http://www.sustiendas.com" class="btn btn-default btn-lg size24" target="_blank">Veure on-line</a>
+	            </div>
+	        </div>
+        </div>  
+	</div>
+</div>
+
+<div class="section" id="section2">
+	<div class="row">
+		<div class="container contact">
+
+			<!--
+			<div class="col-md-12">
+				<h2>Contacta amb mi:</h2>
+			</div>
+			-->
+
+            <div class="col-md-6">
+            	
+            	<div id="result"></div>
+
+				<form role="form" class="form-contact" method="post">
+					<div class="form-group">
+						<label for="exampleInputEmail1">El teu nom</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Escriu el teu nom" required="required">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">El teu email</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Escriu el teu email" required="required">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">El teu comentari</label>
+						<textarea class="form-control" name="message" id="message" placeholder="Escriu el teu comentari ..." required="required"></textarea>
+					</div>
+					<a class="btn btn-default" id="submit_btn">Enviar</a>
+				</form>
+
+				<script>
+					
+					$(document).ready(function() {
+						
+						$("#submit_btn").unbind().click(function() {
+							
+
+							//get input field values
+					        var user_name       = $('input[name=name]').val(); 
+					        var user_email      = $('input[name=email]').val();
+					        var user_message    = $('textarea[name=message]').val();
+					        
+					        //simple validation at client's end
+					        //we simply change border color to red if empty field using .css()
+					        var proceed = true;
+					        if(user_name==""){ 
+					            $('input[name=name]').css('border-color','#a94442'); 
+					            proceed = false;
+					        }
+					        if(user_email==""){ 
+					            $('input[name=email]').css('border-color','#a94442'); 
+					            proceed = false;
+					        }
+					        if(user_message=="") {  
+					            $('textarea[name=message]').css('border-color','#a94442'); 
+					            proceed = false;
+					        }
+
+					        if(!proceed){
+					        	output = '<div class="alert alert-danger">Els camps en vermell són obligatoris!</div>';
+					        	$("#result").hide().html(output).slideDown();
+					        }
+
+					        //everything looks good! proceed...
+					        if(proceed) 
+					        {
+
+					        	output = '<div class="alert alert-info">Espera uns instants...</div>';
+    							$("#result").hide().html(output).slideDown();
+
+					            //data to be sent to server
+					            post_data = {'userName':user_name, 'userEmail':user_email, 'userMessage':user_message};
+					            
+					            //Ajax post data to server
+					            $.post('send_email.php', post_data, function(response){  
+
+					                //load json data from server and output message     
+					                if(response.type == 'error')
+					                {
+					                    output = '<div class="alert alert-danger">'+response.text+'</div>';
+					                }else{
+					                
+					                    output = '<div class="alert alert-success">'+response.text+'</div>';
+					                    
+					                    //reset values in all input fields
+					                    $('#contact_form input').val(''); 
+					                    $('#contact_form textarea').val(''); 
+					                }
+					                
+					                $("#result").html(output).delay(3000).fadeOut();
+
+					            }, 'json');
+					            
+					        }
+
+						})
+
+						$(".form-contact input, form-contact textarea").keyup(function() { 
+					        $(".form-contact input, .form-contact textarea").css('border-color',''); 
+					        $("#result").slideUp();
+					    });
+
+					});
+
+				</script>
+
+            </div>
+
+            <div class="col-md-6">
+
+            	<ul class="contact-addresses">
+            		<li><img src="img/email.png"> oriol.ris@gmail.com</li>
+            		<li><img src="img/telf.png"> 688985556</li>
+            		<li><img src="img/address.png">C/ Camí Antic d'Argentona</br>
+            			08348 Cabrils - Barcelona - Espanya</li>
+            	</ul>	
+
+            </div>
+
+        </div>
+    </div>  
+</div>
+
+</body>
+</html>
