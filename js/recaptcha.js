@@ -16,6 +16,8 @@ function setupRecaptcha() {
     form.submit(function(ev){
       ev.preventDefault();
 
+      console.log("It's working!")
+
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
