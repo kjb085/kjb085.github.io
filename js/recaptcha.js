@@ -28,7 +28,7 @@ $(document).ready(function(){
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
-        data: {'g-recaptcha-response': recaptcha, 'name': name, 'email': email, 'tel': tel, 'message': message}
+        data: {'g-recaptcha-response': recaptcha, 'name': name, 'email': email, 'tel': tel, 'message': message},
         dataType: 'json',
         success: function(response) {
           switch (response.message) {
