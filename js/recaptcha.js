@@ -5,8 +5,6 @@ function showRecaptcha(element) {
   });
 }
 
-// function setupRecaptcha() {
-
 $(document).ready(function(){ 
   var contactFormHost = 'http://localhost:5000/',
       $form = $('#contact-form'),
@@ -18,8 +16,8 @@ $(document).ready(function(){
 
       $target = event.target
 
-      console.log(form_info)
-      console.log($target.serialize)
+      console.log($form)
+      console.log(this.serialize)
 
       $.ajax({
         type: 'POST',
