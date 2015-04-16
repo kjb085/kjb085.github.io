@@ -9,24 +9,28 @@
 
 $(document).ready(function(){ 
   var contactFormHost = 'http://localhost:5000/',
-      form = $('#contact-form'),
-      notice = form.find('#notice');
+      $form = $('#contact-form'),
+      notice = $form.find('#notice'),
+      form_info = $form.serialize();
 
-    form.on('submit', function(ev){
-      ev.preventDefault();
+    $form.on('submit', function(event){
+      event.preventDefault();
 
-      console.log("It's working!")
+      $target = $event.target
+
+      console.log(form_info)
+      console.log($target.serialize)
 
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
-        data: form.serialize(),
+        data: $form.serialize(),
         dataType: 'json',
         success: function(response) {
           switch (response.message) {
             case 'success':
-              form.fadeOut(function() {
-                form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+              $form.fadeOut(function() {
+                $form.html('<h4>' + $form.data('success') + '</h4>').fadeIn();
               });
               break;
 
