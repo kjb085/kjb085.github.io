@@ -19,12 +19,6 @@ $(document).ready(function(){
       var message = $('#message').val()
       var recaptcha = grecaptcha.getResponse()
 
-      console.log(name)
-      console.log(email)
-      console.log(tel)
-      console.log(message)
-      console.log(recaptcha)
-
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
@@ -39,7 +33,7 @@ $(document).ready(function(){
               break;
 
             case 'failure_captcha':
-              showRecaptcha('recaptcha_widget');
+              // showRecaptcha('recaptcha_widget');
               notice.text(notice.data('captcha-failed')).fadeIn();
               break;
 
