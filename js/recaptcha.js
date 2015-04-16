@@ -6,7 +6,7 @@ function showRecaptcha(element) {
 }
 
 $(document).ready(function(){ 
-  var contactFormHost = 'http://localhost:5000/',
+  var contactFormHost = 'http://kjb085-github-backend.herokuapp.com/',
       $form = $('#contact-form'),
       notice = $form.find('#notice'),
       form_info = $form.serialize();
