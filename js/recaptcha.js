@@ -13,16 +13,22 @@ $(document).ready(function(){
 
     $form.on('submit', function(event){
       event.preventDefault();
+      var name = $('#name').val()
+      var email = $('#email').val()
+      var tel = $('#phone').val()
+      var message = $('#message').val()
+      var recaptcha = grecaptcha.getResponse()
 
-      $target = event.target
-
-      console.log($form)
-      console.log(this.serialize)
+      console.log(name)
+      console.log(email)
+      console.log(tel)
+      console.log(message)
+      console.log(recaptcha)
 
       $.ajax({
         type: 'POST',
         url: contactFormHost + 'send_email',
-        data: $form.serialize(),
+        data: {'g-recaptcha-response': recaptcha, 'name': name, 'email': email, 'tel': tel, 'message': message}
         dataType: 'json',
         success: function(response) {
           switch (response.message) {
