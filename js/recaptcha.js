@@ -1,9 +1,9 @@
-// function showRecaptcha(element) {
-//   Recaptcha.create('6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I', element, {
-//     theme: 'custom', // maybe pick another at https://developers.google.com/recaptcha/docs/customization
-//     custom_theme_widget: 'recaptcha_widget'
-//   });
-// }
+function showRecaptcha(element) {
+  Recaptcha.create('6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I', element, {
+    theme: 'custom', // maybe pick another at https://developers.google.com/recaptcha/docs/customization
+    custom_theme_widget: 'recaptcha_widget'
+  });
+}
 
 // function setupRecaptcha() {
 
