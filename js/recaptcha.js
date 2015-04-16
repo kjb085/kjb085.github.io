@@ -16,7 +16,7 @@ $(document).ready(function(){
     $form.on('submit', function(event){
       event.preventDefault();
 
-      $target = $event.target
+      $target = event.target
 
       console.log(form_info)
       console.log($target.serialize)
