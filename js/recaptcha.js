@@ -8,7 +8,7 @@
 // function setupRecaptcha() {
 
 $(document).ready(function(){ 
-  var contactFormHost = 'kjb085-github-backend.herokuapp.com',
+  var contactFormHost = 'kjb085-github-backend.herokuapp.com/',
       form = $('#contact-form'),
       notice = form.find('#notice');
 
