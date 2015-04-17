@@ -47,12 +47,14 @@ body{
 
   #intro h1 {
     font-family: 'Audiowide', helvetica;
-    text-shadow: 5px 5px #000000
+    text-shadow: 5px 5px #fff;
+    color: black;
   }
 
   #intro h2 {
     font-family: 'Audiowide', helvetica;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #fff;
+    color: black;
   }
 
   h1{
@@ -110,7 +112,7 @@ body{
     background-color: #7BAABE;
   }
   #about h3{
-    text-shadow: 1px 1px #fff
+    /*text-shadow: 1px 1px #fff*/
   }
   #contact {
     padding: 3% 0 0 0;
