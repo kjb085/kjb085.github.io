@@ -1,23 +1,26 @@
-function showRecaptcha(element) {
-  Recaptcha.create('6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I', element, {
-    theme: 'custom', // maybe pick another at https://developers.google.com/recaptcha/docs/customization
-    custom_theme_widget: 'recaptcha_widget'
-  });
-}
-
 $(document).ready(function(){ 
   var contactFormHost = 'http://kjb085-github-backend.herokuapp.com/',
-      $form = $('#contact-form'),
-      notice = $form.find('#notice'),
-      form_info = $form.serialize();
+      notice = $('#info-form').find('#notice') // Temporarily in use until form validations complete, change to captcha modal eventually
 
-    $form.on('submit', function(event){
+    // $('#info_form').on('submit', function(event){
+    //   event.preventDefault();
+    //   $('#recaptcha_modal').modal('show');
+    // });
+
+    $('#captcha-form').on('submit', function(event){
       event.preventDefault();
       var name = $('#name').val()
       var email = $('#email').val()
       var tel = $('#phone').val()
       var message = $('#message').val()
       var recaptcha = grecaptcha.getResponse()
+      
+      $('#recaptcha_modal').modal('hide')
+
+      if (name == "" || email == "" || message == ""){
+        notice.text(notice.data('validation')).fadeIn();
+        throw "Form not validated"
+      };
 
       $.ajax({
         type: 'POST',
@@ -27,9 +30,7 @@ $(document).ready(function(){
         success: function(response) {
           switch (response.message) {
             case 'success':
-              $form.fadeOut(function() {
-                $form.html('<h4>' + $form.data('success') + '</h4>').fadeIn();
-              });
+              notice.text(notice.data('captcha-success')).fadeIn();
               break;
 
             case 'failure_captcha':
