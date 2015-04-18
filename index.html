@@ -13,13 +13,14 @@
 	<link rel="stylesheet" type="text/css" href="css/custom2.css" />
 
 	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu|Volkhov|Audiowide' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500|Volkhov' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
 
 	<!-- Scripts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script type="text/javascript" src="js/recaptcha.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -68,7 +69,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>A web application combined with a chrome extension and a sublime text plugin which allows developers to store, curate, and easily access snippets of code in order expedite the development process.</h3><br/>
+							<h3>A web application combined with a Chrome Extension and a Sublime Text plugin which allows developers to store, curate, and easily access snippets of code in order expedite the development process.</h3><br/>
 							<!-- Save what's below for the details page -->
 							<!-- Users can easily grab code snippets at any time while browsing the web and both access and save snippets directly from their text editors as well as view, curate, and share their groups of snippets with a seamless web interface. -->
 							<a class="btn btn-default btn-lg porfolio-btn" href="#" role="button" data-toggle="modal" data-target="#portfolioModal1">See more &raquo;</a>
@@ -111,7 +112,7 @@
 						<div class="col-md-12">
 							<h3>An upcoming web based to-do list application which allows users to manage tasks on a post-it note like board and collaborate on project boards with other users.</h3><br/>
 							<!-- share their board with others, add others as contributors, and get notifications tasks that have an upcoming due date. -->
-							<a class="btn btn-default btn-lg porfolio-btn" href="#" role="button">See more &raquo;</a>
+							<a class="btn btn-default btn-lg porfolio-btn" href="#" role="button" data-toggle="modal" data-target="#portfolioModal4">See more &raquo;</a>
 						</div>
 					</div>
 				</div>
@@ -124,7 +125,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h3>An upcoming, easy to use web application that allows user's of Yahoo's fantasy hockey to easily import and share their teams as well as vote and comment on other user's teams.</h3><br/>
-							<a class="btn btn-default btn-lg porfolio-btn" href="#" role="button">See more &raquo;</a>
+							<a class="btn btn-default btn-lg porfolio-btn" href="#" role="button" data-toggle="modal" data-target="#portfolioModal5">See more &raquo;</a>
 						</div>
 					</div>
 				</div>
@@ -170,7 +171,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<form name="sentMessage" id="contact-form" method="post" data-success="Message successfully sent!" validate>
+						<form name="sentMessage" id="info-form" method="post" data-success="Message successfully sent!" validate>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
@@ -195,9 +196,9 @@
 								<div class="clearfix"></div>
 								<div class="col-xs-12 text-center">
 									<!-- <div id="success"></div> -->
-									<div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
-									<div class="g-recaptcha" data-sitekey="6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I"></div>
-									<input type="submit" value="Send Message" class="btn btn-xl">
+									<div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again." data-captcha-success="Message successfully sent!" data-validation="Please fill out all required forms."></div>
+									<a class="btn btn-xl" href="#" role="button" data-toggle="modal" data-target="#recaptcha_modal">Send Message</a>
+									<!-- <input type="submit" class="btn btn-xl" value="Send Message"> -->
 								</div>
 							</div>
 						</form>
@@ -244,6 +245,26 @@
 		</div>
 
 	</div>
+
+<!-- ######################################## Recaptcha Modals #################################################### -->
+<div class="modal fade" id="recaptcha_modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-vertical-centered">
+  	<div class="modal-content">
+    	<div class="modal-header">
+      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      	<h4 class="modal-title" id="myModalLabel">Sorry. Need to make sure you aren't a bot.</h4>
+    	</div>
+    	<div class="modal-body">
+     		<form id="captcha-form">
+     			<div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
+     			<div class="g-recaptcha" data-sitekey="6LeObAUTAAAAAMtfwY22umX9YCTNoklUHp1wBj2I"></div>
+					<input type="submit" value="Submit" class="btn">
+     		</form>
+    	</div>
+  	</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 <!-- ######################################## Portfolio Modals #################################################### -->
 	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -321,7 +342,7 @@
 						<p>MongoDB | Express | AngularJS | Node.js | Bootstrap | Chrome Extension API | Sublime Text Plugin API</p>
 						<ul class="item-details no-bullets">
 								GitHub:
-								<strong><a href="https://github.com/garygz/commandve">Web App</a> | <a href="https://github.com/kjb085/cmdvninja-chrome-ext">Chrome Extension</a> | <a href="https://github.com/kjb085/cmdvninja-sublime">Sublime Text PlugIn</a></strong>
+								<strong><a target="_blank" href="https://github.com/garygz/commandve">Web App</a> | <a target="_blank" href="https://github.com/kjb085/cmdvninja-chrome-ext">Chrome Extension</a> | <a target="_blank" href="https://github.com/kjb085/cmdvninja-sublime">Sublime Text PlugIn</a></strong>
 							</li>
 							<li>Date:
 								<strong>March 2015</strong>
@@ -408,7 +429,7 @@
 						<p>Ruby | Rails | HTML | CSS3</p>
 						<ul class="item-details no-bullets">
 							<li>GitHub:
-								<strong><a href="https://github.com/sagararathi/riddle_me_this">Source</a></strong>
+								<strong><a target="_blank" href="https://github.com/sagararathi/riddle_me_this">Source</a></strong>
 							</li>
 							<li>Date:
 								<strong>February 2015</strong>
@@ -491,7 +512,7 @@
 						<p>JavaScript | Chrome Extension API | Firebase </p>
 						<ul class="item-details no-bullets">
 							<li>GitHub:
-								<strong><a href="https://github.com/JohnathanWeisner/DontPanic">Source</a></strong>
+								<strong><a target="_blank" href="https://github.com/JohnathanWeisner/DontPanic">Source</a></strong>
 							</li>
 							<li>Date:
 								<strong>January 2015</strong>
@@ -505,9 +526,185 @@
 
 				<div class="row">
 					<div class="col-xs-4 col-xs-offset-4">
-						<a class="btn btn-default project-btn" href="#">Why can't I access this project?</a>
+						<a class="btn btn-default project-btn" href="#dont_panic_alert" data-toggle="modal" data-target="#dont_panic_alert">Why can't I access this project?</a>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="dont_panic_alert" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-title">
+							<h2>Since Don't Panic is made for the express purpose of use at Dev Bootcamp, we cannot allow access to outside users as this would potentially result in false database entries and or removals. Sorry for an inconvience. Please feel free to contact me and I can help set up a similar functioning Chrome Extension.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-title">
+							<h2>Finished! (Under Construction)</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 carousel-container">
+						<div id="myCarousel4" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<!-- <ol class="carousel-indicators">
+								<li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel4" data-slide-to="1"></li>
+							</ol> -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide under-construction" src="pictures/under_construction.png" alt="First slide">
+				        </div>
+				      </div>
+				      <!-- <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+				      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				      	<span class="sr-only">Previous</span>
+				      </a>
+				      <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+				      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				      	<span class="sr-only">Next</span>
+				      </a> -->
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row modal-body">
+					<div class="col-xs-6">
+						<h3>Features</h3>
+						<ul class="text-left">
+							<li>Create post-it note like to-do boards</li>
+							<li>Add other users as collaborators or administrators to your board</li>
+							<li>Create and organize tasks which can be assigned a due date and/or a user responsibile for completion</li>
+							<li>Get notifications of incomplete tasks when due date is nearing</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 text-center">		
+						<h3>Technology</h3>
+						<p>Ruby | Rails | JavaScript | jQueryUI | Bootstrap</p>
+						<ul class="item-details no-bullets">
+							<li>GitHub:
+								<strong><a target="_blank" href="https://github.com/kjb085/finished">Source</a></strong>
+							</li>
+							<li>Date:
+								<strong>May 2015</strong>
+							</li>
+							<li>Website:
+								<strong>TBD</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<a class="btn btn-default project-btn" href="#">Why can't I access this project?</a>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="modal-title">
+							<h2>Yahoo Team Tracker! (Under Construction)</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 carousel-container">
+						<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<!-- <ol class="carousel-indicators">
+								<li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel5" data-slide-to="1"></li>
+							</ol> -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img class="first-slide under-construction" src="pictures/under_construction.png" alt="First slide">
+				        </div>
+				      </div>
+				      <!-- <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+				      	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				      	<span class="sr-only">Previous</span>
+				      </a>
+				      <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+				      	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				      	<span class="sr-only">Next</span>
+				      </a> -->
+				    </div>
+				  </div>
+				</div>
+
+				<div class="row modal-body">
+					<div class="col-xs-6">
+						<h3>Features</h3>
+						<ul class="text-left">
+							<li>Log In and Sign up using your Yahoo Account</li>
+							<li>Automatically import your fantasy hockey teams</li>
+							<li>Upvote and comment on other users' teams</li>
+							<li>View the community's favorite teams</li>
+						</ul>
+					</div>
+
+					<div class="col-xs-6 text-center">		
+						<h3>Technology</h3>
+						<p>Ruby | Rails | JavaScript | Yahoo API | Bootstrap</p>
+						<ul class="item-details no-bullets">
+							<li>GitHub:
+								<strong><a target="_blank" href="https://github.com/kjb085/yahoo_team_tracker">Source</a></strong>
+							</li>
+							<li>Date:
+								<strong>May 2015</strong>
+							</li>
+							<li>Website:
+								<strong>TBD</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- <div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<a class="btn btn-default project-btn" href="#">Why can't I access this project?</a>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
