@@ -1,60 +1,19 @@
-#menu li {
-  display:inline-block;
-  margin: 10px;
-  color: #000;
-  background:#fff;
-  background: rgba(255,255,255, 0.5);
-  -webkit-border-radius: 10px;
-            border-radius: 10px;
-}
-#menu li.active{
-  background:#666;
-  background: rgba(0,0,0, 0.5);
-  color: #fff;
-}
-#menu li a{
-  text-decoration:none;
-  color: #000;
-}
-#menu li.active a:hover{
-  color: #000;
-}
-#menu li:hover{
-  background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-  padding: 9px 18px;
-  display:block;
-}
-#menu li.active a{
-  color: #fff;
-}
-#menu{
-  position:fixed;
-  top:0;
-  left:0;
-  height: 40px;
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin:0;
-}
-
 body{
   font-family: 'Volkhov', sans-serif;
 }
 
   #intro h1 {
-    font-family: 'Audiowide', helvetica;
-    text-shadow: 5px 5px #fff;
+    font-family: 'Ubuntu', helvetica;
+    text-shadow: none;
     color: black;
+    font-weight: 500;
   }
 
   #intro h2 {
-    font-family: 'Audiowide', helvetica;
-    text-shadow: 2px 2px #fff;
+    font-family: 'Ubuntu', helvetica;
+    text-shadow: none;
     color: black;
+    font-weight: 500;
   }
 
   h1{
@@ -187,8 +146,8 @@ html, body {
 }
 
 .portfolio_img {
-  width: 300px ;
-  height: 300px ;
+  /*width: 300px;*/
+  height: 300px;
 }
 
 .connect a {
@@ -197,6 +156,14 @@ html, body {
 
 .connect a:hover {
   color: #7BAABE;
+}
+
+.carousel-inner .item .under-construction {
+  height: 450px;
+}
+
+.pop_up {
+
 }
 
 /***********************/
@@ -333,4 +300,12 @@ html, body {
 
 .no-bullets {
   list-style-type: none;
+}
+
+.fade{opacity:0;-webkit-transition:opacity 0.15s linear;-o-transition:opacity 0.15s linear;transition:opacity 0.15s linear}
+
+.modal-vertical-centered {
+  transform: translate(0, 50%) !important;
+  -ms-transform: translate(0, 50%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
 }
